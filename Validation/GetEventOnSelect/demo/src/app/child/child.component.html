@@ -1,0 +1,20 @@
+<p>child works!</p>
+<!-- <h3>{{uname}}</h3> -->
+<!-- <button (click)="passData()">Pass Data from Child to  Parent</button> -->
+<div style="width: 50%;">
+    <h3>Sales Products</h3>
+    <table style="border: 2px solid black;" class="table table-dark table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of products">
+              <th scope="row">{{u.name}}</th>
+              <td>{{u.price}}</td>
+            </tr>
+          </tbody>
+    </table>
+</div>

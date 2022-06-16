@@ -1,0 +1,21 @@
+<p>users works!</p>
+<table class="table table-dark table-hover">
+    <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Username</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let u of result">
+          <th scope="row">{{u.id}}</th>
+          <td>{{u.name|uppercase}}</td>
+          <td>{{u.username}}</td>
+          <td>{{u.email|lowercase}}</td>
+        </tr>
+      </tbody>
+  </table>
+  
+

@@ -1,0 +1,26 @@
+<div *ngIf="isLoading">
+  <app-spinner></app-spinner>
+</div>
+<div class="container-fluid">
+  <h5>Login Page</h5>
+
+<form [formGroup]="regForm" class="w-25  mx-auto" (ngSubmit)="userlogin()">
+  <div class="form-group">
+ 
+    
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1"   name="email" formControlName="email"  aria-describedby="emailHelp">
+    <span style="color: red;" *ngIf="email?.invalid && email?.touched">Please enter a valid email </span>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input  name="password" formControlName="password" [type]="val" class="form-control" id="exampleInputPassword1">
+    <span  id="eye"><i (click)="toggle()" [class]="eye"></i></span>
+    <span style="color: red;" *ngIf="password?.invalid && password?.touched">Please enter a valid password </span>
+  </div>
+ <br>
+ <br>
+  <button type="submit" class="btn btn-primary w-100">Submit</button>
+  <a href="http://localhost:4200/register">Please register</a>
+</form>
+</div>

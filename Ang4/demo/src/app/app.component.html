@@ -1,0 +1,41 @@
+<button (click)="toggleUser()">Toggle</button>
+<app-user *ngIf="flag"></app-user>
+<!-- <app-product></app-product> -->
+<!-- Example split danger button -->
+<!-- <div class="col-sm-1">City</div>
+<div class="col-sm-3">
+    <div class="fleft " id="drop-down">
+
+        <select id="cd-dropdown" class="cd-select"  onmousedown="this.value='';" onchange ="jsFunction(this.value);" >
+            <option value="0" >...</option>
+            <option value="1" >Bihar</option>
+            <option value="2" >Bangalore</option>
+            <option value="3" >Ara</option>
+            <option value="4" >Patna</option>
+            <option value="5" >Buxar</option>
+
+        </select>
+    </div>
+</div> -->
+<!-- Example single danger button -->
+<!-- <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      City
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Patna</a></li>
+      <li><a class="dropdown-item" href="#">Bangalore</a></li>
+      <li><a class="dropdown-item" href="#">Buxar</a></li>
+      <li><a class="dropdown-item" href="#">Delhi</a></li>
+      <li><a class="dropdown-item" href="#">Kota</a></li>
+    </ul>
+  </div> -->
+  <!-- <div style="margin: auto; width: 50%; border: 3px solid greenyellow; padding: 10px;">
+    <select [(ngModel)]="cSelected">
+        <option *ngFor="let c of city" [value]="c.id">{{c.Name}}</option>
+    </select>
+    <br>
+    city selected is {{cSelected}}
+
+  </div> -->
+  <app-product></app-product>

@@ -1,0 +1,34 @@
+<p>add-prod works!</p>
+<h2>Add Product</h2>
+
+<form #addForm="ngForm" (ngSubmit)="addProduct(addForm)">
+<input type="text"
+#productName="ngModel"
+ngModel
+id="productName"
+name="productName"
+placeholder="Enter the product name"><br><br>
+
+ <input type="text"
+#productDescription="ngModel"
+ngModel
+id="productDescription"
+name="productDescription"
+placeholder="Enter the product description"><br><br>
+
+<input type="text"
+#productPrice="ngModel"
+ngModel
+id="productPrice"
+name="productPrice"
+placeholder="Enter the product price"><br><br>
+
+<input type="text"
+#productImageURL="ngModel"
+ngModel
+id="productImageURL"
+name="productImageURL"
+placeholder="Enter the product image url"><br><br>
+
+<button class="btn btn-primary"type="submit">Add Product</button>
+</form>

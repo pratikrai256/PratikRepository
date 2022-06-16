@@ -1,0 +1,57 @@
+<h3>Enter Heamatology Report</h3>
+<form  #htForm="ngForm" (ngSubmit)="heamSubmit(htForm)" id="form">
+  
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <input type="hidden" class="form-control" placeholder="Haemoglobin" name="_id" #_id="ngModel" [(ngModel)]="id" ngModel>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <input type="text" class="form-control"  placeholder="Haemoglobin                                                                                                        g/dl" name="haemoglobin" #haemoglobin="ngModel"  ngModel>
+      </div>
+      <div class="form-group col-md-6">
+        <input type="text" class="form-control"  placeholder="Total Count/WBC                                                                                              /Cmm" name="wbc" #wbc="ngModel" ngModel>
+      </div>
+    </div>
+   
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            
+            <input type="text" class="form-control"  placeholder="Neutrophils                                                                                                             % " name="neutrophils" #neutrophils="ngModel" ngModel>
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control"  placeholder="Lymphocytes                                                                                                         %" name="lymphocytes" #lymphocytes="ngModel" ngModel>
+          </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control"  placeholder="Eosinophiles                                                                                                            %" name="eosinophiles" #eosinophiles="ngModel" ngModel>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control"  placeholder="Monocytes                                                                                                            %" name="monocytes" #monocytes="ngModel" ngModel>
+            </div>
+          </div>
+          
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  
+                  <input type="text" class="form-control"  placeholder="Basophils                                                                                                                 %" name="basophills" #basophills="ngModel" ngModel>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control"  placeholder="Red Blood Cells(RBC)                                                                                    mill/cmm" name="rbc" #rbc="ngModel" ngModel>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control"  placeholder="Packed Cell Value(PCV)                                                                                           %" name="pcv" #pcv="ngModel" ngModel>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control"  placeholder="MEAN Corpuscular Volume(MCV)                                                                         %" name="mcv" #mcv="ngModel" ngModel>
+                </div>
+              </div>
+              
+                  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

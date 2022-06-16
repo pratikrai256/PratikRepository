@@ -1,0 +1,18 @@
+<p>This is Parent component!</p>
+<!-- <app-child (message)="getData($event)" ></app-child>
+<h3>{{result}}</h3> -->
+<!-- <app-child [products]="salesProducts">
+    <h3 class="header">Sales Products</h3>
+    <a class="link" href="#">Go to other section</a>
+</app-child>
+<app-child [products]="newProducts">
+    <h3 class="header">New Products</h3>
+    <a href="#" class="link">Go to other section</a>
+</app-child> -->
+<button (click)="toggleChild()">Toggle Child</button><br><br>
+<input type="text" [(ngModel)]="uname">{{uname}}
+<div>
+<h3 #header>Techno Elevate</h3>
+<p #header>Pratik Rai</p>
+</div>
+<app-child *ngIf="flag" [uname]="uname"><h4 #cheader>Content Projection</h4></app-child>

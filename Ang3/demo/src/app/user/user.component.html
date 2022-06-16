@@ -1,0 +1,21 @@
+
+<h3>Users Component</h3>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      
+      <th scope="col">Name</th>
+      <th scope="col">Department</th>
+      <th scope="col">ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let u of values">
+      
+      <td>{{u.name}}</td>
+      <td>{{u.department}}</td>
+      <td>{{u.ID}}</td>
+    </tr>
+    
+  </tbody>
+</table>

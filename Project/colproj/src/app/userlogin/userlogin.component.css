@@ -1,0 +1,24 @@
+form{
+    margin-top: 150px;
+    padding: 45px;
+    width:490px !important;
+    height:390px;
+    box-shadow:1px 0px 8px rgb(235, 233, 233) ;
+}
+
+
+.container-fluid{
+    background-image: url("../assets//pexels-rfstudio-3825368.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 742px;
+
+}
+#eye{
+    margin-top: -28px;
+    margin-left: 25.5%;
+    position: absolute;
+}
+#icon{
+    margin-left: 70px;
+}

@@ -1,0 +1,22 @@
+<p>product works!</p>
+<div class="container">
+
+    <table border="2px solid black">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>ID</th>
+            <th>Salary</th>
+            <th>DOB</th>
+            <th>AgePipe</th>
+        </tr>
+        <tr *ngFor="let u of user">
+        <td>{{u.name|uppercase}}</td>
+        <td>{{u.city|titlecase}}</td>
+        <td>{{u.id}}</td>
+        <td>{{u.sal|currency:'INR'}}</td>
+        <td>{{u.dob|date:'d/MM/y'}}</td>
+        <td>{{u.dob|age}}</td>
+        </tr>
+    </table>
+</div>

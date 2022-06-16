@@ -1,0 +1,10 @@
+.body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../assets/pexels-anna-shvets-5682668.jpg");
+    height:737px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 132, 255);
+}
+p{
+    margin-left: 280px;
+}

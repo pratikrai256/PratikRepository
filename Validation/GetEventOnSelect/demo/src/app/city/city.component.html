@@ -1,0 +1,17 @@
+<!-- <p>city works!</p>
+<div *ngFor="let city of City">
+    <input type="radio" name="nameOfCity" value="{{city}}" (change)="radioChangeHandler($event)">
+    <i>{{city}}</i>
+</div>
+<p><span>You Selected:</span><b>{{selectedCity}}</b></p> -->
+<div class="col-md-3 mb-3">
+    <label for="validationCustom04">City</label>
+    <select class="custom-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>{{City}}</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <p><span>You Selected:</span><b>{{selectedCity}}</b></p>

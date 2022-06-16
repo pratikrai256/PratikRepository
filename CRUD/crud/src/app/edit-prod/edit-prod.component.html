@@ -1,0 +1,37 @@
+<p>edit-prod works!</p>
+<h2>Edit Product</h2>
+<form #editForm="ngForm" (ngSubmit)="editProduct(editForm)">
+    <label >Product Name</label>
+    <input type="text"
+#productName="ngModel"
+id="productName"
+name="productName"
+[(ngModel)]="selectedProd.productName"
+placeholder="Enter the product name"><br><br>
+
+<label >Product Description</label>
+<input type="text"
+#productDescription="ngModel"
+id="productDescription"
+name="productDescription"
+[(ngModel)]="selectedProd.productDescription"
+placeholder="Enter the product description"><br><br>
+
+<label >Product Price</label>
+
+<input type="text"
+#productPrice="ngModel"
+id="productPrice"
+name="productPrice"
+[(ngModel)]="selectedProd.productPrice"
+placeholder="Enter the product price"><br><br>
+
+<label >Product Image URL</label>
+<input type="text"
+#productImageURL="ngModel"
+id="productImageURL"
+name="productImageURL"
+[(ngModel)]="selectedProd.productImageURL"
+placeholder="Enter the product image url"><br><br>
+<button class="btn btn-primary"type="submit">Update Product</button>
+</form>

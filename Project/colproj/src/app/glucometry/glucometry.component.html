@@ -1,0 +1,19 @@
+<h5>Add Glucometry Report</h5>
+<form #glForm="ngForm" id="form" (ngSubmit)="glucoSubmit(glForm)"> 
+  <div class="form-group">
+    <input type="hidden" class="form-control" aria-describedby="emailHelp" placeholder="Haemoglobin" name="_id" #_id="ngModel" [(ngModel)]="id" ngModel>
+  </div>
+    <div class="form-group">
+      <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Fasting Blood Sugar" style="width:50%" name="fbs" #fbs="ngModel" ngModel >
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Post Prandial Blood Sugar" style="width:50%" name="ppbs" #ppbs="ngModel" ngModel>
+      </div>
+    <div class="form-group">
+      <input type="text" class="form-control"  placeholder="Glycosylated Haemoglobin(HbA1C)" style="width:50%" name="gh" #gh="ngModel" ngModel>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Calcium" style="width:50%" name="calcium" #calcium="ngModel" ngModel >
+      </div>
+    <button type="submit" class="btn btn-primary" id="register">Submit</button>
+  </form>

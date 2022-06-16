@@ -1,0 +1,41 @@
+<form class="w-25 mx-auto" id="form" [formGroup]="entForm" (ngSubmit)="enterForm()"> 
+    <h1>Create Test</h1>
+    <div class="form=group mx-auto w-50">
+      <!-- <select   class="form-control" name="_id" >
+      <option value=""  selected disabled >Patient Name </option>
+      <option [value]="n._id" *ngFor="let n of names">{{n.fname}} </option>
+    </select> -->
+    <h3 >Welcome {{selectedData.fname}}</h3>
+    </div>
+    <fieldset class="form-group row">
+     
+      <div class="col-sm-10"> 
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="heamo" formControlName="heamo" id="gridRadios1" value="option1">
+          <label class="form-check-label" for="gridRadios1">
+            Heamatology
+          </label>
+        </div>
+        <div class="form-check mt-3">
+          <input class="form-check-input" type="checkbox" name="gluco" formControlName="gluco" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Glucometry
+          </label>
+        </div>
+        <div class="form-check mt-3">
+          <input class="form-check-input" type="checkbox" name="thy" formControlName="thy" id="gridRadios3" value="option3" >
+          <label class="form-check-label" for="gridRadios3">
+            Thyroid Profile
+          </label>
+        </div>
+      </div>
+    </fieldset>
+ 
+    <div class="form-group row mt-4">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary" id="save" >Submit</button>
+      </div>
+    </div>
+
+  </form>
+ 

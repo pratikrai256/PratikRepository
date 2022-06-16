@@ -1,0 +1,16 @@
+<h5>Enter Thyroid Profile</h5>
+<form #thForm="ngForm" id="form" (ngSubmit)="thySubmit(thForm)"> 
+  <div class="form-group">
+    <input type="hidden" class="form-control" aria-describedby="emailHelp" placeholder="Haemoglobin" name="_id" #_id="ngModel" [(ngModel)]="id" ngModel>
+  </div>
+    <div class="form-group">
+      <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="TRI IODO Thyronine-T3 Total                                            mg/dl" style="width:50%" name="tri" #tri="ngModel" ngModel>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Throxine-T4                                                                       mg/dl" style="width:50%" name="thyroxine" #thyroxine="ngModel" ngModel>
+      </div>
+    <div class="form-group">
+      <input type="text" class="form-control"  placeholder="Thyroid Stimulaing Harmone(TSH)                                   ulU/ml" style="width:50%" name="tsh" #tsh="ngModel" ngModel>
+    </div>
+    <button type="submit" class="btn btn-primary" id="register">Submit</button>
+  </form>

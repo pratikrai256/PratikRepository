@@ -1,0 +1,26 @@
+<h3>Welcome To Registration Portal</h3>
+<div class="container">
+<div class="col-md-3">
+<form #regForm="ngForm" (ngSubmit)="onSubmit(regForm)">
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label">First Name</label>
+      <input #fname="ngModel" required minlength="6" maxlength="10" pattern="[a-zA-Z]+$" type="text" class="form-control" id="exampleInputEmail1" name="fname" aria-describedby="emailHelp" ngModel>
+      <span style="color: red;" *ngIf="fname.invalid && fname.touched">Enter a valid First Name</span>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1" class="form-label">Last Name</label>
+      <input #lname="ngModel" type="text" class="form-control" name="lname" id="exampleInputPassword1" ngModel>
+    </div>
+    <!-- ngModel Group -->
+    <div class="form-group">
+      <div ngModelGroup="address">
+        <input type="text" placeholder="Enter the city" name="city" #city="ngModel" class="form-control" ngModel> <br>
+        <input type="text" placeholder="Enter the state" name="state" #state="ngModel" class="form-control" ngModel>
+      </div>
+    </div>
+
+    <button [disabled]="regForm.invalid" type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+<h3>{{regForm.value|json}}</h3>

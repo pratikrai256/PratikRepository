@@ -1,0 +1,20 @@
+<button type="button"class="btn btn-primary" (click)="showData()">To Do List</button>&nbsp;
+<button type="button"class="btn btn-primary" (click)="showDatas()">Completed</button><br>
+<table  *ngIf="flag"class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">UserId</th>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Completed Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of newValue">
+        <td>{{u.userId}}</td>
+        <td>{{u.id}}</td>
+        <td>{{u.title}}</td>
+        <td>{{u.completed}}</td>
+      </tr>
+    </tbody>
+  </table>

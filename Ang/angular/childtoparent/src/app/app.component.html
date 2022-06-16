@@ -1,0 +1,74 @@
+<!-- <p *ngIf="flag">TechnoElevate</p>
+<button (click)="toggle()" id="btn">{{Change}}</button>
+<table>
+  <tr *ngFor="let user of users">
+  <td>{{user.name}}</td>
+  <td>{{user.age}}</td>
+</tr>
+</table>
+
+
+<h3>USING *NGFOR INSIDE LI</h3>
+<ul>
+  <li *ngFor="let user of users">{{user.name}} {{user.age}}</li>
+</ul>
+<h3> USING *NGFOR INSIDE UL</h3>
+<ul *ngFor="let user of users">
+<li>{{user.name}} {{user.age}}</li>
+</ul>
+
+<div [ngSwitch]="selectedCountry">
+  <div *ngSwitchCase="'ind'">
+    <h3>India has been selected</h3>
+  </div>
+  <div *ngSwitchCase="'usa'">
+    <h3>United States of America has been selected</h3>
+  </div>
+  <div *ngSwitchCase="'uk'">
+    <h3>United Kingdom has been selected</h3>
+  </div>
+  <div *ngSwitchCase="'uae'">
+    <h3>United Arab Emirates  has been selected</h3>
+  </div>
+  <div *ngSwitchDefault>
+    <h3>No country has been selected</h3>
+  </div>
+</div> -->
+<!-- <app-parent></app-parent> -->
+<!-- <app-users></app-users> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"  routerLink="login">Login <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="about">About Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" routerLink="contact">Contact Us</a>
+          <a class="dropdown-item" href="#" routerLink="registration">Registration</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Exit</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<router-outlet></router-outlet>

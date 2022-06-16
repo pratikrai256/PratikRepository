@@ -1,0 +1,36 @@
+<div class="container-fluid">
+<h5>Please Register</h5>
+<div style="background-image: url('../assets/lab.svg')">
+
+</div>
+
+<form [formGroup]="regForm" (ngSubmit)="userReg()" class="w-25  mx-auto" id="form"> 
+    <div class="form-group">
+      <label for="" >Name</label>
+      <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Enter your First Name"   name="fname" formControlName="fname">
+    </div>
+    <div class="form-group">
+      <label for="" >Email</label>
+        <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Enter your Email"   name="email" formControlName="email">
+      </div>
+    <div class="form-group">
+      <label for="" >Password</label>
+      <input [type]="val" class="form-control"  placeholder="Enter your Password"   name="password" formControlName="password">
+      <span id="eye"><i (click)="toggle()" [class]="eye"></i></span>
+    </div>
+    <div class="form-outline mb-4">
+      <label for="" >Select Role</label>
+      <input type="text" class="form-control" id="form3Example" placeholder="Role"
+          list="list" formControlName="role" name="role" id="role"  >
+      <datalist id="list">
+          <option value="User"></option>
+          <option value="Admin"></option>
+      </datalist>
+      <span 
+          style=" position: relative;top:10px;color:red;font-weight: bolder;margin-bottom:100px">
+          </span>
+  </div>
+  
+    <button type="submit" class="btn btn-primary w-100" id="register">Register</button>
+  </form>
+</div>
